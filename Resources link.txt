@@ -1,0 +1,7 @@
+https://github.com/iammert/ReadableBottomBar
+https://github.com/hdodenhof/CircleImageView
+BAck color = #292F33
+Bar color = #292F33
+Horizontal color = #66757F
+Date Color = #66757F
+1:12:25

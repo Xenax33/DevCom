@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile_in_sample"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_name_in_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
+        android:text="NAME"
+        android:textColor="#F4F4F4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfile_in_sample"
+        app:layout_constraintStart_toEndOf="@+id/imgProfile_in_sample"
+        app:layout_constraintTop_toTopOf="@+id/imgProfile_in_sample"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_date_in_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="8/04/2069"
+        android:textColor="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfile_in_sample"
+        app:layout_constraintStart_toEndOf="@+id/imgProfile_in_sample"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_in_sample"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_comment_in_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="comment"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_date_in_sample"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date_in_sample" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#8F8F8F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_comment_in_sample" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileInPost"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
+        android:text="NAME"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileInPost"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileInPost"
+        app:layout_constraintTop_toTopOf="@+id/imgProfileInPost"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="8/04/2069"
+        android:textColor="#8F8F8F"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileInPost"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileInPost"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:singleLine="false"
+        android:text="C++"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileInPost" />
+
+    <ImageView
+        android:id="@+id/imgPostInPost"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150mdp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_description"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
+        android:drawableLeft="@drawable/comment"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:gravity="center"
+        android:text="569"
+        android:textColor="#8F8F8F"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPostInPost" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="50dp"
+        android:background="#8F8F8F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_comment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
